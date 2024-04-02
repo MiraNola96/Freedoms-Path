@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=League+Spartan:wght@100..900&display=swap');
 
 :root {
-    --primary-color: #e0d9cd;
-    --secondary-color: #55564f;
-    --accent-color: #ff4c29;
+  --primary-color: #e0d9cd;
+  --secondary-color: #55564f;
+  --accent-color: #ff4c29;
 }
 
 *,*::before,*::after{
@@ -14,6 +14,16 @@
 
 html, body {
  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Adamina', serif;
+  font-size: 30px;
+}
+
+h2 {
+ font-family: 'League+Spartan', sans-serif;
+ margin-bottom: .8em;
 }
 
 .btn {
@@ -110,6 +120,15 @@ nav a:hover {
 .nav-toggle:checked ~nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
+}
+/* ------- Hero Section -------> */
+.hero {
+  background-image: url(Images/Hero.jpg);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* ------- About Campaign Section -------> */
