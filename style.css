@@ -4,6 +4,7 @@
   --primary-color: #e0d9cd;
   --secondary-color: #55564f;
   --accent-color: #ff4c29;
+  --body-color: #3C3529;
 }
 
 *,*::before,*::after{
@@ -216,15 +217,26 @@ nav a:hover {
   display: flex;
   position: absolute;
   top: 200px;
-  right: 200px;
+  right: 385px;
+  color: var(--body-color);
+}
+
+.wqw-section p {
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  position: absolute;
+  top: 500px;
+  right: 450px;
+  color: var(--body-color);
 }
 
 .wqw-section a {
   position: relative;
   padding: .8rem 1.8rem;
   cursor: pointer;
-  top: 475px;
-  right: -1290px;
+  top: 550px;
+  right: -1100px;
 }
 
 /* ------- VA Section -------> */
@@ -249,6 +261,7 @@ nav a:hover {
 }
 
 .va-section h1 {
+  color: var(--body-color);
   text-align: center;
   font-size: 54px;
   display: flex;
@@ -258,6 +271,7 @@ nav a:hover {
 }
 
 .va-section p {
+  color: var(--body-color);
   text-align: center;
   display: flex;
   position: absolute;
@@ -270,7 +284,7 @@ nav a:hover {
   padding: .8rem 1.8rem;
   cursor: pointer;
   top: 325px;
-  right: -950px;
+  right: -925px;
 }
 
 /* ------- Resouces Section -------> */
