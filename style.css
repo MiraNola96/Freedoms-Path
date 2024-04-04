@@ -27,6 +27,8 @@ h2 {
 }
 
 p {
+  font-family: 'league+spartan', sans-serif;
+  font-size: 18;
   line-height: 1.5;
 }
 
@@ -162,6 +164,8 @@ nav a:hover {
   display: flex;
   padding: 3em;
   gap: 1em;
+  margin-top: 100px;
+  margin-bottom: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -199,7 +203,7 @@ nav a:hover {
 /* ------- Warriors & Quiet Waters Section -------> */
 .wqw-section {
   background-image: url(Images/warriors_and_quiet_waters.jpg);
-  height: 100vh;
+  height: 95vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,12 +230,12 @@ nav a:hover {
 /* ------- VA Section -------> */
 .va-section {
   background-image: url(Images/backdrop.png);
-  height: 80vh;
+  height: 75vh;
   width: 80%;
-  margin-top: 150px;
-  margin-right: 300px;
-  margin-left: 200px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-right: 200px;
+  margin-left: 100px;
+  margin-bottom: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,17 +245,76 @@ nav a:hover {
 .va-section img {
   display: flex;
   position: absolute;
-  height: 120%;
+  height: 75vh;
+}
+
+.va-section h1 {
+  text-align: center;
+  font-size: 54px;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  right: 140px;
+}
+
+.va-section p {
+  text-align: center;
+  display: flex;
+  position: absolute;
+  top: 260px;
+  right: 140px;
+}
+
+.va-section a {
+  position: relative;
+  padding: .8rem 1.8rem;
+  cursor: pointer;
+  top: 325px;
+  right: -950px;
 }
 
 /* ------- Resouces Section -------> */
+.resource-section {
+  background: var(--secondary-color);
+}
 
+.resource-section h1 {
+  color: var(--primary-color);
+  margin-top: 60px; /* not working... */
+  margin-left: 60px;
+}
+
+.card-sect {
+  display:flex;
+  justify-content:center;
+}
+
+.card{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.card h2 {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.card p {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.card img {
+  width:450px;
+  padding:10px;
+  margin:10px;
+}
 /* ------- Psych Armor Section -------> */
  
 /* ------- Footer Section -------> */
 footer {
-  background: #082032;
-  color: #FFF5E0;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   text-align:center;
   padding:30px;
 }
@@ -264,9 +327,6 @@ footer {
 
 .footer-top {
   display: block;
-  /* justify-content: center;
-  align-items: center; */
-  /* margin: 0 auto; */
 }
 
 .secondary-navigation {
@@ -287,7 +347,7 @@ footer {
 
 .secondary-navigation a {
   text-decoration: none;
-  color: #FFF5E0;
+  color: var(--primary-color);
   padding: .5em;
   display: flex;
   left: 300px;
@@ -295,7 +355,7 @@ footer {
 
 .secondary-navigation ul li a:hover {
   transition:1s;
-  color: #FFF5E0;
+  color:var(--primary-color);
   background-color: #FF4C29;
   border-radius:10px;
  }
