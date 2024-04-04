@@ -310,11 +310,17 @@ nav a:hover {
   margin:10px;
 }
 /* ------- Psych Armor Section -------> */
- 
+ .pa-section {
+  margin-top: 100px;
+  margin-left: 500px;
+  margin-bottom: 100px;
+  justify-content: center;
+ }
+
 /* ------- Footer Section -------> */
 footer {
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--secondary-color);
   text-align:center;
   padding:30px;
 }
@@ -347,7 +353,7 @@ footer {
 
 .secondary-navigation a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   padding: .5em;
   display: flex;
   left: 300px;
