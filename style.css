@@ -136,7 +136,7 @@ nav a:hover {
 }
 /* ------- Hero Section -------> */
 .hero {
-  background-image: url(Images/Hero.jpg);
+  background-image: url(Images/warriors_and_quiet_waters.jpg);
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,17 +147,17 @@ nav a:hover {
 .hero img {
   display: flex;
   position: absolute;
-  top: 425px;
-  right: 120px;
-  height: 30%;
+  top: 225px;
+  right: 270px;
+  height: 0 auto;
 }
 
 .hero a {
   position: relative;
   padding: .8rem 1.8rem;
   cursor: pointer;
-  top: 565px;
-  right: -1230px;
+  top: 450px;
+  right: -1075px;
 }
 
 /* ------- About Campaign Section -------> */
@@ -173,8 +173,12 @@ nav a:hover {
 
 .left-col {
   flex: 1;
-  align-self: stretch;
+  /* align-self: stretch; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
+
 
 .right-col {
   flex: 1;
@@ -182,156 +186,71 @@ nav a:hover {
   margin-right: 160px;
 }
 
-.right-col img {
-  height: 100%;
-}
-
 .right-col h1 {
   padding-bottom: .5em;
   font-size: 36px;
-  text-align: center;
+  text-align: left;
   margin-right: 400px;
 }
 
 .left-col img {
   width: 60%;
-  margin-top: 50px;
-  margin-left: 300px;
-  position: center; 
-  object-fit: cover;
 }
 
-/* ------- Warriors & Quiet Waters Section -------> */
-.wqw-section {
-  background-image: url(Images/warriors_and_quiet_waters.jpg);
-  height: 95vh;
+/* <!-- Common Signs Section --> */
+.section-2 {
+  background-image: url(Images/Background.jpg);
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-
-.wqw-section h1 {
-  text-align: center;
-  font-size: 72px;
+/* <!-- Why don't Veterans seek mental health Section --> */
+ .section {
   display: flex;
-  position: absolute;
-  top: 200px;
-  right: 385px;
-  color: var(--body-color);
-}
-
-.wqw-section p {
-  text-align: center;
-  font-size: 16px;
-  display: flex;
-  position: absolute;
-  top: 500px;
-  right: 450px;
-  color: var(--body-color);
-}
-
-.wqw-section a {
-  position: relative;
-  padding: .8rem 1.8rem;
-  cursor: pointer;
-  top: 550px;
-  right: -1100px;
-}
-
-/* ------- VA Section -------> */
-.va-section {
-  background-image: url(Images/backdrop.png);
-  height: 75vh;
-  width: 80%;
+  padding: 3em;
+  gap: 1em;
   margin-top: 100px;
-  margin-right: 200px;
-  margin-left: 100px;
   margin-bottom: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.va-section img {
-  display: flex;
-  position: absolute;
-  height: 75vh;
-}
-
-.va-section h1 {
-  color: var(--body-color);
-  text-align: center;
-  font-size: 54px;
-  display: flex;
-  position: absolute;
-  top: 100px;
-  right: 140px;
-}
-
-.va-section p {
-  color: var(--body-color);
-  text-align: center;
-  display: flex;
-  position: absolute;
-  top: 260px;
-  right: 140px;
-}
-
-.va-section a {
-  position: relative;
-  padding: .8rem 1.8rem;
-  cursor: pointer;
-  top: 325px;
-  right: -925px;
-}
-
-/* ------- Resouces Section -------> */
-.resource-section {
-  background: var(--secondary-color);
-}
-
-.resource-section h1 {
-  color: var(--primary-color);
-  margin-top: 60px; /* not working... */
-  margin-left: 60px;
-}
-
-.card-sect {
-  display:flex;
-  justify-content:center;
-}
-
-.card{
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.card h2 {
-  color: var(--primary-color);
-  font-size: 20px;
-}
-
-.card p {
-  color: var(--primary-color);
-  font-size: 16px;
-}
-
-.card img {
-  width:450px;
-  padding:10px;
-  margin:10px;
-}
-/* ------- Psych Armor Section -------> */
- .pa-section {
-  margin-top: 100px;
-  margin-left: 500px;
-  margin-bottom: 100px;
+  align-items: center;
   justify-content: center;
- }
+}
 
-/* ------- Footer Section -------> */
+.left-col {
+  flex: 1;
+  /* align-self: stretch; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+
+.right-col {
+  flex: 1;
+  margin: 4em;
+  margin-right: 160px;
+}
+
+.right-col h1 {
+  padding-bottom: .5em;
+  font-size: 36px;
+  text-align: left;
+  margin-right: 400px;
+}
+
+.left-col img {
+  width: 60%;
+}
+/* <!-- Recognize the signs section --> */
+ 
+/* <!-- What can Veterans do to fight against their issues Section --> */
+ 
+/* <!-- How will W&QW programs help me Section --> */
+
+/* <!-- Testimonial Section --> */
+
+/* <!-- Footer Section --> */
 footer {
   background: var(--primary-color);
   color: var(--secondary-color);
@@ -464,15 +383,17 @@ footer {
     width: 600px;
   }
 
-  /* ------- About Campaign Section -------> */
+  /* <!-- Common Signs Section --> */
 
-  /* ------- Warriors & Quiet Waters Section -------> */
+  /* <!-- Why don't Veterans seek mental health Section --> */
+ 
+  /* <!-- Recognize the signs section --> */
+ 
+  /* <!-- What can Veterans do to fight against their issues Section --> */
+ 
+  /* <!-- How will W&QW programs help me Section --> */
 
-  /* ------- VA Section -------> */
-
-  /* ------- Resouces Section -------> */
-
-  /* ------- Psych Armor Section -------> */
+  /* <!-- Testimonial Section --> */
  
   /* ------- Footer Section -------> */
   .footer-top {
