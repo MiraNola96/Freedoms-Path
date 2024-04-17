@@ -24,7 +24,7 @@ h1 {
 
 h2 {
  font-family: 'League+Spartan', sans-serif;
- margin-bottom: .8em;
+ padding: .8em;
 }
 
 p {
@@ -133,6 +133,7 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
+
 /* ------- Hero Section -------> */
 .hero {
   background-image: url(Images/warriors_and_quiet_waters.jpg);
@@ -178,7 +179,6 @@ nav a:hover {
   justify-content: end;
 }
 
-
 .right-col {
   flex: 1;
   margin: 4em;
@@ -199,11 +199,25 @@ nav a:hover {
 /* <!-- Common Signs Section --> */
 .section-2 {
   background-image: url(Images/Background.jpg);
-  height: 80vh;
+  height: 72.5vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  color: var(--primary-color);
+}
+
+.section-2 img {
+  padding-bottom: 3em;
+}
+
+.section-2 h1 {
+  padding-bottom: 1em;
+  padding-right: 4em;
+}
+
+.section-2 p {
+  padding-right: 10em;
 }
 
 /* <!-- Why don't Veterans seek mental health Section --> */
@@ -248,15 +262,29 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display:grid;
+  display:block;
   grid-template-columns: repeat(4,1fr);
   gap: 1em;
+  color: var(--primary-color);
+ }
+
+ .section-4 h1 {
+  padding-top: 2em;
+  padding-left: 3em;
+ }
+
+ .card-sect {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  padding: 8em;
  }
 
  .card {
   margin-left: 20px;
   margin-right: 20px;
   justify-content: center;
+  width: 300px;
  }
 
  .card img {
@@ -372,6 +400,14 @@ nav a:hover {
 
 .left-col img {
   width: 60%;
+}
+
+/* <!-- VA SS Hotline Section --> */
+.section-8 {
+  background-color: var(--body-color);
+  color: var(--primary-color);
+  text-align: center;
+  outline-color: var(--accent-color);
 }
 
 /* <!-- Footer Section --> */
