@@ -407,7 +407,6 @@ nav a:hover {
   background-color: var(--body-color);
   color: var(--primary-color);
   text-align: center;
-  outline-color: var(--accent-color);
 }
 
 /* <!-- Footer Section --> */
