@@ -39,8 +39,8 @@ p {
 
 .btn {
   display: inline-block;
-  background:var(--accent-color);
-  color:var(--primary-color);
+  background:var(--body-color);
+  color:var(--accent-color);
   padding: .8rem 1.8rem;
   margin-top: 2rem;
   cursor: pointer;
@@ -157,7 +157,7 @@ nav a:hover {
   padding: .8rem 1.8rem;
   cursor: pointer;
   top: 450px;
-  right: -1075px;
+  right: -1093px;
 }
 
 /* ------- About Campaign Section -------> */
@@ -212,7 +212,7 @@ nav a:hover {
 }
 
 .section-2 h1 {
-  padding-bottom: 1em;
+  padding-bottom: .5em;
   padding-right: 4em;
 }
 
@@ -231,27 +231,27 @@ nav a:hover {
   justify-content: center;
 }
 
-.right-col-vsmh {
+.right-col-s3 {
   flex: 1;
   align-items: center;
   justify-content: end;
 }
 
-.left-col-vsmh {
+.left-col-s3 {
   flex: 1;
   margin: 4em;
   margin-right: 160px;
 }
 
-.left-col-vsmh h1 {
+.left-col-s3 h1 {
   padding-bottom: .5em;
   font-size: 36px;
   text-align: left;
   margin-right: 400px;
 }
 
-.right-col-vsmh img {
-  width: 60%;
+.right-col-s3 img {
+  width: 80%;
 }
 
 /* <!-- Recognize the signs section --> */
@@ -302,28 +302,26 @@ nav a:hover {
   justify-content: center;
 }
 
-.left-col {
+.left-col-s5 {
   flex: 1;
-  /* align-self: stretch; */
   display: flex;
   align-items: center;
   justify-content: end;
 }
 
-.right-col {
+.right-col-s5 {
   flex: 1;
   margin: 4em;
   margin-right: 160px;
 }
 
-.right-col h1 {
+.right-col-s5 h1 {
   padding-bottom: .5em;
   font-size: 36px;
   text-align: left;
-  margin-right: 400px;
 }
 
-.left-col img {
+.left-col-s5 img {
   width: 60%;
 }
 
@@ -331,7 +329,6 @@ nav a:hover {
 .section-6 {
   background-image: url(images/Background.jpg);
   display: flex;
-  padding: 3em;
   gap: 1em;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -339,32 +336,23 @@ nav a:hover {
   justify-content: center;
 }
 
-.right-col-vsmh {
-  flex: 1;
-  align-items: center;
-  justify-content: end;
-}
-
-.left-col-vsmh {
+.left-col-s6 {
   flex: 1;
   margin: 4em;
   margin-right: 160px;
 }
 
-.left-col-vsmh p {
+.left-col-s6 p {
  color: var(--primary-color);
+ margin-left: 200px;
 }
 
-.left-col-vsmh h1 {
+.left-col-s6 h1 {
   color: var(--primary-color);
   padding-bottom: .5em;
   font-size: 36px;
-  text-align: left;
-  margin-right: 400px;
-}
-
-.right-col-vsmh img {
-  width: 60%;
+  /* text-align: left; */
+  margin-left: 200px;
 }
 
 /* <!-- Testimonial Section --> */
