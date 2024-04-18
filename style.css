@@ -223,7 +223,7 @@ nav a:hover {
 /* <!-- Why don't Veterans seek mental health Section --> */
  .section-3 {
   display: flex;
-  padding: 3em;
+  padding: 3em 14em;
   gap: 1em;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -232,15 +232,15 @@ nav a:hover {
 }
 
 .right-col-s3 {
-  flex: 1;
+  flex: 2;
   align-items: center;
   justify-content: end;
 }
 
 .left-col-s3 {
   flex: 1;
-  margin: 4em;
-  margin-right: 160px;
+  /* margin: 4em;
+  margin-right: 160px; */
 }
 
 .left-col-s3 h1 {
@@ -250,9 +250,9 @@ nav a:hover {
   margin-right: 400px;
 }
 
-.right-col-s3 img {
+/* .right-col-s3 img {
   width: 80%;
-}
+} */
 
 /* <!-- Recognize the signs section --> */
  .section-4 {
@@ -351,22 +351,52 @@ nav a:hover {
   color: var(--primary-color);
   padding-bottom: .5em;
   font-size: 36px;
-  /* text-align: left; */
   margin-left: 200px;
+}
+
+.left-col-s6 .btn {
+  display: flex;
+  background-color: var(--accent-color);
+  color: var(--body-color);
 }
 
 /* <!-- Testimonial Section --> */
 .section-7 {
   display: flex;
   padding: 3em;
-  gap: 1em;
   margin-top: 100px;
   margin-bottom: 100px;
   align-items: center;
   justify-content: center;
 }
 
-.left-col {
+.left-col-s7 img {
+  margin-left: 8em;
+}
+
+.right-col-s7 {
+  margin-right: 8em;
+  background: var(--secondary-color);
+  color:var(--primary-color);
+}
+
+.right-col-s7 h1 {
+  padding-bottom: .5em;
+  padding-left: .5em;
+}
+
+.right-col-s7 p {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.right-col-s7 .btn {
+  display: flex;
+  background-color: var(--accent-color);
+  color: var(--body-color);
+}
+
+/* .left-col {
   flex: 1;
   display: flex;
   align-items: center;
@@ -388,13 +418,15 @@ nav a:hover {
 
 .left-col img {
   width: 60%;
-}
+} */
 
 /* <!-- VA SS Hotline Section --> */
 .section-8 {
   background-color: var(--body-color);
   color: var(--primary-color);
   text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 /* <!-- Footer Section --> */
@@ -464,42 +496,44 @@ footer {
  
   /* media querries for desktop version                                                                 Media Querries                */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
-@media screen and (min-width:720px){
+@media screen and (min-width:768px){
   h1 {
     font-size: 42px;
   }
-  
-/* ------- Navigation Section -------> */  
+
+  .hero {
+    height: 100vh;
+  }
+
   .nav-toggle-label {
     display: none;
   }
-    
+  
   .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-    
+  
   nav {
     all: unset;
-    margin-right: 60px;
   }
-    
+  
   nav a {
     opacity: 1;
     position: relative;
   }
-    
+  
   nav ul {
     display: flex;
     justify-content: flex-end;
   }
-    
+  
   nav li {
     margin-left:3em;
     margin-bottom: 0;
   }
-    
+  
   nav a::before {
     content: "";
     display: block;
@@ -511,7 +545,7 @@ footer {
     right: 0;
     transform:scale(0,1);
   }
-    
+  
   nav a:hover::before {
     transform: scale(1,1);
     transition: transform ease-in-out 350ms;
@@ -525,7 +559,8 @@ footer {
 
   .hero img{
     display: flex;
-    width: 600px;
+    width: 200px;
+    align-content: center;
   }
 
   /* <!-- Common Signs Section --> */
@@ -533,7 +568,20 @@ footer {
   /* <!-- Why don't Veterans seek mental health Section --> */
  
   /* <!-- Recognize the signs section --> */
- 
+
+  .card-sect h1{
+    color:#FFF5E0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 1em;
+  }
+
+   .card-sect {
+    padding: 4em;
+    position: relative;
+  }
+
   /* <!-- What can Veterans do to fight against their issues Section --> */
  
   /* <!-- How will W&QW programs help me Section --> */
@@ -552,18 +600,3 @@ footer {
   }
 }
   
-  /* Media queries for video display */
-  /* -----------------------------------------------> */
-  @media (min-aspect-ratio: 16/9){
-    .back-video{
-      width: 100%;
-      height: auto;
-    }
-  }
-  
-  @media (max-aspect-ratio: 16/9){
-    .back-video{
-      width: auto;
-      height: 100%;
-    }
-  }
