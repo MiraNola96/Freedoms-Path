@@ -47,6 +47,7 @@ p {
   font-family: 'league+spartan', sans-serif;
   text-decoration: none;
   border-radius: 1em;
+  width: 153px;
 }
 
 .btn:hover {
@@ -68,7 +69,7 @@ p {
  margin-left: 60px;
 }
 
-/* .nav-toggle {
+.nav-toggle {
   display: none;
 }
 
@@ -85,7 +86,7 @@ p {
 .nav-toggle-label span {
   color: var(--secondary-color);
   font-size: 1.5em;
-} */
+}
 
 nav {
   position: absolute;
@@ -122,7 +123,7 @@ nav a {
 nav a:hover {
   color: #FF4C29;
 }
-/* 
+
 .nav-toggle:checked ~nav {
   transform: scale(1,1);
 }
@@ -130,7 +131,7 @@ nav a:hover {
 .nav-toggle:checked ~nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
-} */
+}
 /* ------- Hero Section -------> */
 .hero {
   background-image: url(Images/warriors_and_quiet_waters.jpg);
@@ -146,9 +147,12 @@ nav a:hover {
 
 .hero-title {
   width: 600px;
- 
+}
+
+.hero-title .btn {
   
 }
+
 .hero img {
  width: 100%;
 }
@@ -174,7 +178,6 @@ nav a:hover {
 
 .left-col {
   flex: 1;
-  /* align-self: stretch; */
   display: flex;
   align-items: center;
   justify-content: end;
@@ -240,8 +243,6 @@ nav a:hover {
 
 .left-col-s3 {
   flex: 1;
-  /* margin: 4em;
-  margin-right: 160px; */
 }
 
 .left-col-s3 h1 {
@@ -358,7 +359,6 @@ nav a:hover {
   display: flex;
   background-color: var(--accent-color);
   color: var(--body-color);
-  width: 153px;
 }
 
 /* <!-- Testimonial Section --> */
@@ -397,7 +397,6 @@ nav a:hover {
   display: flex;
   background-color: var(--accent-color);
   color: var(--body-color);
-  width: 153px;
 }
 
 /* <!-- VA SS Hotline Section --> */
@@ -486,7 +485,7 @@ footer {
     padding: 1em;
   }
   
-  /* .nav-toggle-label {
+  .nav-toggle-label {
     display: none;
   }
   
@@ -533,8 +532,7 @@ footer {
     transform-origin: left;
   } 
   
-/* add a line above, below, left, or right of selection or hover */
-/*   
+/* add a line above, below, left, or right of selection or hover */  
   nav a::before {
     content: "";
     display: block;
@@ -551,17 +549,59 @@ footer {
     transform: scale(1,1);
     transition: transform ease-in-out 350ms;
     transform-origin: left;
-  }  */ */
+  } 
 
   /* ------- Hero Section -------> */
   .hero {
     height: 90vh;
   }
 
+  /* <!-- About Campaign --> */
+  .section {
+    display: block;
+    padding: 3em;
+    gap: 1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .left-col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .right-col {
+    flex: 1;
+    margin: 3em;
+  }
   /* <!-- Common Signs Section --> */
-
+  .section-2 {
+    background-image: url(Images/Background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: var(--primary-color);
+  }
+  
+  .section-2 img {
+    padding-bottom: 3em;
+    width: 60%;
+  }
+  
+  .section-2 h1 {
+    padding-bottom: .5em;
+    padding-right: 4em;
+  }
+  
+  .section-2 p {
+    padding-right: 10em;
+  }
   /* <!-- Why don't Veterans seek mental health Section --> */
  
   /* <!-- Recognize the signs section --> */
@@ -578,6 +618,11 @@ footer {
     padding: 4em;
     position: relative;
   }
+  /* <!-- Common signs of a struggling Veteran --> */
+
+  /* <!-- Why don't veterans seek mental health--> */
+
+  /* <!-- recognize the signs --> */
 
   /* <!-- What can Veterans do to fight against their issues Section --> */
  
