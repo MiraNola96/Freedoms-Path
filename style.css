@@ -38,7 +38,7 @@ p {
  }
 
 .btn {
-  display: inline-block;
+  display: block;
   background:var(--body-color);
   color:var(--accent-color);
   padding: .8rem 1.8rem;
@@ -135,7 +135,7 @@ nav a:hover {
 /* ------- Hero Section -------> */
 .hero {
   background-image: url(Images/warriors_and_quiet_waters.jpg);
-  height: 80vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,27 +147,30 @@ nav a:hover {
 
 .hero-title {
   width: 600px;
-}
-
-.hero-title .btn {
-  
+  background: url(Images/hero-title-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero img {
  width: 100%;
 }
 
-.hero a {
-  position: relative;
+.hero-btn {
+  display: block;
   padding: .8rem 1.8rem;
   cursor: pointer;
   top: 450px;
-  right: -1093px;
 }
 
 /* ------- About Campaign Section -------> */
 .section {
-  display: flex;
+  display: block;
   padding: 3em;
   gap: 1em;
   margin-top: 75px;
@@ -178,32 +181,31 @@ nav a:hover {
 
 .left-col {
   flex: 1;
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 .right-col {
   flex: 1;
-  margin: 4em;
-  margin-right: 160px;
 }
 
 .right-col h1 {
   padding-bottom: .5em;
+  padding-top: .5em;
   font-size: 36px;
-  text-align: left;
-  margin-right: 400px;
+  text-align: center;
 }
 
 .left-col img {
-  width: 60%;
+  width: 100%;
 }
 
 /* <!-- Common Signs Section --> */
 .section-2 {
+  display: block;
   background-image: url(Images/Background.jpg);
-  height: 72.5vh;
+  height: 95vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,40 +214,40 @@ nav a:hover {
 }
 
 .section-2 img {
-  padding-bottom: 3em;
+  width: 100%;
 }
 
 .section-2 h1 {
   padding-bottom: .5em;
-  padding-right: 4em;
+  /* padding-right: 4em; */
 }
 
 .section-2 p {
-  padding-right: 10em;
+  /* padding-right: 10em; */
 }
 
 /* <!-- Why don't Veterans seek mental health Section --> */
  .section-3 {
-  display: flex;
-  padding: 3em 14em;
+  display: block;
+  padding: 3em;
   gap: 1em;
   margin-top: 75px;
   margin-bottom: 75px;
   align-items: center;
   justify-content: center;
-  margin-right: 8em;
+  /* margin-right: 8em; */
 }
 
 .right-col-s3 {
   flex: 2;
   align-items: center;
-  justify-content: end;
-  margin-left: 8em;
+  justify-content: center;
+  /* margin-left: 8em; */
 }
 
-.left-col-s3 {
+.left-col-s3 img {
   flex: 1;
-  
+  display: block;
 }
 
 .left-col-s3 h1 {
@@ -258,7 +260,7 @@ nav a:hover {
 /* <!-- Recognize the signs section --> */
  .section-4 {
   background-image: url(Images/Background.jpg);
-  height: 80vh;
+  height: 200vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,27 +271,25 @@ nav a:hover {
   color: var(--primary-color);
  }
 
- .section-4 h1 {
-  padding-top: 2em;
-  padding-left: 3em;
-  font-size: 48px;
- }
-
  .card-sect {
-  display: flex;
+  display: block;
   justify-content: center;
   color: var(--primary-color);
-  padding: 4em;
  }
 
+ .card h2 {
+  font-size: 32px;
+ }
+ 
  .card {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  margin-left: 57.5px;
-  margin-right: 57.5px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-bottom: 4em;
  }
 
  .card img {
@@ -298,7 +298,7 @@ nav a:hover {
 
 /* <!-- What can Veterans do to fight against their issues Section --> */
 .section-5 {
-  display: flex;
+  display: block;
   padding: 3em;
   gap: 1em;
   margin-top: 100px;
@@ -309,15 +309,15 @@ nav a:hover {
 
 .left-col-s5 {
   flex: 1;
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: end;
+  /* justify-content: end; */
 }
 
 .right-col-s5 {
   flex: 1;
   margin: 4em;
-  margin-right: 160px;
+  /* margin-right: 160px; */
 }
 
 .right-col-s5 h1 {
@@ -327,16 +327,16 @@ nav a:hover {
 }
 
 .left-col-s5 img {
-  width: 60%;
+  width: 100%;
 }
 
 /* <!-- How will W&QW programs help me Section --> */
 .section-6 {
   background-image: url(images/Background.jpg);
-  display: flex;
+  display: block;
   gap: 1em;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 1em;
+  margin-bottom: 2em;
   align-items: center;
   justify-content: center;
 }
@@ -344,23 +344,25 @@ nav a:hover {
 .left-col-s6 {
   flex: 1;
   margin: 4em;
-  margin-right: 160px;
+  /* margin-right: 160px; */
 }
 
 .left-col-s6 p {
  color: var(--primary-color);
- margin-left: 200px;
+ /* margin-left: 200px; */
 }
 
 .left-col-s6 h1 {
   color: var(--primary-color);
   padding-bottom: .5em;
   font-size: 36px;
-  margin-left: 200px;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 200px; */
 }
 
 .left-col-s6 .btn {
-  display: flex;
+  display: block;
   background-color: var(--accent-color);
   color: var(--body-color);
 }
@@ -477,9 +479,9 @@ footer {
   color: #FFF5E0;
 }
  
-  /* media querries for mobile version                                                                 Media Querries                */
+  /* media querries for DESKTOP version                                                                 Media Querries                */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) {
   h1 {
     font-size: 42px;
   }
@@ -560,32 +562,48 @@ footer {
     height: 90vh;
   }
 
-  /* <!-- About Campaign --> */
-  .section {
-    display: block;
-    padding: 3em;
-    gap: 1em;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  .hero-title {
+    width: 600px;
+    background: url(Images/hero-title-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  /* <!-- About Campaign --> */
+  .section {
+    display: flex;
+    padding: 3em;
+    gap: 1em;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .left-col {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
   }
 
   .right-col {
     flex: 1;
     margin: 3em;
+    text-align: left;
   }
+
+  .left-col img {
+    width: 70%;
+  }
+  
   /* <!-- Common Signs Section --> */
   .section-2 {
     background-image: url(Images/Background.jpg);
-    height: 135vh;
+    height: 75vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -594,8 +612,7 @@ footer {
   }
   
   .section-2 img {
-    padding-bottom: 3em;
-    width: 100%;
+    width: 93vh
   }
   
   .section-2 h1 {
@@ -606,9 +623,10 @@ footer {
   .section-2 p {
     padding-right: 10em;
   }
+
   /* <!-- Why don't Veterans seek mental health Section --> */
   .section-3 {
-    display: block;
+    display: flex;
     padding: 3em 14em;
     gap: 1em;
     margin-top: 50px;
@@ -632,18 +650,18 @@ footer {
   .left-col-s3 h1 {
     padding-bottom: .5em;
     font-size: 36px;
-    
     margin-right: 400px;
   }
+
   /* <!-- Recognize the signs section --> */
   .section-4 {
     background-image: url(Images/Background.jpg);
-    height: 160vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display:block;
+    display:flex;
     grid-template-columns: repeat(4,1fr);
     gap: 1em;
     color: var(--primary-color);
@@ -652,10 +670,12 @@ footer {
    .section-4 h1 {
     justify-content: center;
     font-size: 36px;
+    margin-left: 3em;
+    margin-top: 3em;
    }
   
    .card-sect {
-    display: block;
+    display: flex;
     justify-content: center;
     color: var(--primary-color);
     padding: 4em;
@@ -675,15 +695,73 @@ footer {
     justify-content: center;
    }
   /* <!-- Common signs of a struggling Veteran --> */
-
-  /* <!-- Why don't veterans seek mental health--> */
-
-  /* <!-- recognize the signs --> */
-
-  /* <!-- What can Veterans do to fight against their issues Section --> */
+  .section-5 {
+    display: flex;
+    padding: 3em;
+    gap: 1em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left-col-s5 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .right-col-s5 {
+    flex: 1;
+    margin: 4em;
+    margin-right: 160px;
+  }
+  
+  .right-col-s5 h1 {
+    padding-bottom: .5em;
+    font-size: 36px;
+    text-align: left;
+  }
+  
+  .left-col-s5 img {
+    width: 60%;
+  }
  
   /* <!-- How will W&QW programs help me Section --> */
-
+  .section-6 {
+    background-image: url(images/Background.jpg);
+    display: flex;
+    gap: 1em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left-col-s6 {
+    flex: 1;
+    margin: 4em;
+    margin-right: 160px;
+  }
+  
+  .left-col-s6 p {
+   color: var(--primary-color);
+   margin-left: 200px;
+  }
+  
+  .left-col-s6 h1 {
+    color: var(--primary-color);
+    padding-bottom: .5em;
+    font-size: 36px;
+    margin-left: 200px;
+  }
+  
+  .left-col-s6 .btn {
+    display: flex;
+    background-color: var(--accent-color);
+    color: var(--body-color);
+  }
   /* <!-- Testimonial Section --> */
  
   /* ------- Footer Section -------> */
