@@ -19,7 +19,7 @@ html, body {
 
 h1 {
   font-family: 'Adamina', serif;
-  font-size: 30px;
+  font-size: 36px;
 }
 
 h2 {
@@ -170,8 +170,8 @@ nav a:hover {
   display: flex;
   padding: 3em;
   gap: 1em;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 75px;
+  margin-bottom: 75px;
   align-items: center;
   justify-content: center;
 }
@@ -229,20 +229,23 @@ nav a:hover {
   display: flex;
   padding: 3em 14em;
   gap: 1em;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 75px;
+  margin-bottom: 75px;
   align-items: center;
   justify-content: center;
+  margin-right: 8em;
 }
 
 .right-col-s3 {
   flex: 2;
   align-items: center;
   justify-content: end;
+  margin-left: 8em;
 }
 
 .left-col-s3 {
   flex: 1;
+  
 }
 
 .left-col-s3 h1 {
@@ -269,13 +272,14 @@ nav a:hover {
  .section-4 h1 {
   padding-top: 2em;
   padding-left: 3em;
+  font-size: 48px;
  }
 
  .card-sect {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  padding: 8em;
+  padding: 4em;
  }
 
  .card {
@@ -581,7 +585,7 @@ footer {
   /* <!-- Common Signs Section --> */
   .section-2 {
     background-image: url(Images/Background.jpg);
-    height: 100vh;
+    height: 135vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -591,7 +595,7 @@ footer {
   
   .section-2 img {
     padding-bottom: 3em;
-    width: 60%;
+    width: 100%;
   }
   
   .section-2 h1 {
@@ -603,21 +607,73 @@ footer {
     padding-right: 10em;
   }
   /* <!-- Why don't Veterans seek mental health Section --> */
- 
+  .section-3 {
+    display: block;
+    padding: 3em 14em;
+    gap: 1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-col-s3 {
+    flex: 2;
+    align-items: center;
+  }
+  
+  .left-col-s3 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left-col-s3 h1 {
+    padding-bottom: .5em;
+    font-size: 36px;
+    
+    margin-right: 400px;
+  }
   /* <!-- Recognize the signs section --> */
-
-  .card-sect h1{
-    color:#FFF5E0;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 1em;
-  }
-
-   .card-sect {
-    padding: 4em;
+  .section-4 {
+    background-image: url(Images/Background.jpg);
+    height: 160vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-  }
+    display:block;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    color: var(--primary-color);
+   }
+  
+   .section-4 h1 {
+    justify-content: center;
+    font-size: 36px;
+   }
+  
+   .card-sect {
+    display: block;
+    justify-content: center;
+    color: var(--primary-color);
+    padding: 4em;
+   }
+  
+   .card {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-left: 57.5px;
+    margin-right: 57.5px;
+   }
+  
+   .card img {
+    justify-content: center;
+   }
   /* <!-- Common signs of a struggling Veteran --> */
 
   /* <!-- Why don't veterans seek mental health--> */
