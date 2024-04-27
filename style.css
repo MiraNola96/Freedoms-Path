@@ -136,7 +136,7 @@ nav a:hover {
 /* ------- Hero Section -------> */
 .hero {
   background-image: url(Images/warriors_and_quiet_waters.jpg);
-  height: 70vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
