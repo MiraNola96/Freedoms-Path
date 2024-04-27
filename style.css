@@ -33,21 +33,20 @@ p {
   line-height: 1.5;
 }
 
- body {
+body {
    font-family: 'league+spartan', sans-serif;
  }
 
 .btn {
-  display: block;
-  background:var(--body-color);
-  color:var(--accent-color);
-  padding: .8rem 1.8rem;
-  margin-top: 2rem;
+  background:var(--accent-color);
+  color:var(--primary-color);
   cursor: pointer;
   font-family: 'league+spartan', sans-serif;
+  font-weight: bold;
   text-decoration: none;
-  border-radius: 1em;
-  width: 153px;
+  border-radius: .8em;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -133,41 +132,40 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
+
 /* ------- Hero Section -------> */
 .hero {
   background-image: url(Images/warriors_and_quiet_waters.jpg);
-  height: 100vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: end;
-  padding: 10em;
+  text-align: center;
+  padding-top: 17em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .hero-title {
-  width: 600px;
   background: url(Images/hero-title-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  color: var(--primary-color);
+}
+
+.hero-title h2 {
+  font-size: 18px;
+  padding-bottom: 1.5em;
 }
 
 .hero img {
  width: 100%;
 }
 
-.hero-btn {
-  display: block;
-  padding: .8rem 1.8rem;
-  cursor: pointer;
-  top: 450px;
-}
 
 /* ------- About Campaign Section -------> */
 .section {
@@ -220,11 +218,6 @@ nav a:hover {
 
 .section-2 h1 {
   padding-bottom: .5em;
-  /* padding-right: 4em; */
-}
-
-.section-2 p {
-  /* padding-right: 10em; */
 }
 
 /* <!-- Why don't Veterans seek mental health Section --> */
@@ -236,14 +229,12 @@ nav a:hover {
   margin-bottom: 75px;
   align-items: center;
   justify-content: center;
-  /* margin-right: 8em; */
 }
 
 .right-col-s3 {
   flex: 2;
   align-items: center;
   justify-content: center;
-  /* margin-left: 8em; */
 }
 
 .left-col-s3 img {
@@ -261,15 +252,19 @@ nav a:hover {
 /* <!-- Recognize the signs section --> */
  .section-4 {
   background-image: url(Images/Background.jpg);
-  height: 200vh;
+  height: 210vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display:block;
-  grid-template-columns: repeat(4,1fr);
-  gap: 1em;
   color: var(--primary-color);
+  text-align: center;
+  padding-top: 1em;
+  font-weight: bold;
+ }
+ 
+  .header-sect h1{
+  margin-top: 1em;
  }
 
  .card-sect {
@@ -279,18 +274,23 @@ nav a:hover {
  }
 
  .card h2 {
-  font-size: 32px;
+  font-size: 30px;
+ }
+
+ .card-1 {
+  margin-top: 2em;
  }
  
  .card {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
   align-items: center;
   gap: 24px;
   margin-left: 80px;
   margin-right: 80px;
-  padding-bottom: 4em;
+  padding-bottom: 3em;
  }
 
  .card img {
@@ -303,7 +303,7 @@ nav a:hover {
   padding: 3em;
   gap: 1em;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -312,13 +312,11 @@ nav a:hover {
   flex: 1;
   display: block;
   align-items: center;
-  /* justify-content: end; */
 }
 
 .right-col-s5 {
   flex: 1;
-  margin: 4em;
-  /* margin-right: 160px; */
+  margin: 2em;
 }
 
 .right-col-s5 h1 {
@@ -344,34 +342,38 @@ nav a:hover {
 
 .left-col-s6 {
   flex: 1;
-  margin: 4em;
-  /* margin-right: 160px; */
+  margin: 2em;
 }
 
 .left-col-s6 p {
  color: var(--primary-color);
- /* margin-left: 200px; */
+ margin-bottom: 3em;
 }
 
 .left-col-s6 h1 {
   color: var(--primary-color);
+  padding-top: 1em;
   padding-bottom: .5em;
   font-size: 36px;
   align-items: center;
   justify-content: center;
-  /* margin-left: 200px; */
 }
 
 .left-col-s6 .btn {
-  display: block;
-  background-color: var(--accent-color);
-  color: var(--body-color);
+  margin-top: 2em;
+  display: flex;
+  width: 153px;
+  height: 44px;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 /* <!-- Testimonial Section --> */
 .section-7 {
-  display: flex;
-  padding: 3em;
+  display: block;
   margin-top: 100px;
   margin-bottom: 100px;
   align-items: center;
@@ -379,15 +381,14 @@ nav a:hover {
 }
 
 .left-col-s7 img {
-  margin-left: 8em;
+  width: 100%;
 }
 
 .right-col-s7 {
-  margin-right: 8em;
   background: var(--secondary-color);
   color:var(--primary-color);
-  padding-top: 3em;
-  padding-bottom: 7.3em;
+  padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .right-col-s7 h1 {
@@ -401,16 +402,25 @@ nav a:hover {
 }
 
 .right-col-s7 .btn {
+  margin-top: 2em;
   display: flex;
-  background-color: var(--accent-color);
-  color: var(--body-color);
+  width: 153px;
+  height: 44px;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 /* <!-- VA SS Hotline Section --> */
 .section-8 {
+  font-size: 12px;
   background-color: var(--body-color);
   color: var(--primary-color);
   text-align: center;
+  padding-right: 4.25em;
+  padding-left: 4.25em;
   padding-top: .5em;
   padding-bottom: .5em;
 }
@@ -509,6 +519,7 @@ footer {
   nav a {
     opacity: 1;
     position: relative;
+    color: var(--secondary-color);
   }
   
   nav ul {
@@ -520,24 +531,6 @@ footer {
     margin-left:3em;
     margin-bottom: 0;
   }
-  
-  nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: #FF4C29;
-    position: absolute;
-    bottom: -.75em;
-    left: 0;
-    right: 0;
-    transform:scale(0,1);
-  }
-  
-  nav a:hover::before {
-    transform: scale(1,1);
-    transition: transform ease-in-out 350ms;
-    transform-origin: left;
-  } 
   
 /* add a line above, below, left, or right of selection or hover */  
   nav a::before {
@@ -569,9 +562,12 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2em;
+    margin-right: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    color: var(--primary-color);
     justify-content: center;
   }
 
@@ -629,8 +625,10 @@ footer {
   .section-3 {
     display: flex;
     padding: 3em 14em;
-    gap: 1em;
+    gap: 6em;
     margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     margin-bottom: 50px;
     align-items: center;
     justify-content: center;
@@ -656,18 +654,14 @@ footer {
 
   /* <!-- Recognize the signs section --> */
   .section-4 {
-    background-image: url(Images/Background.jpg);
-    height: 80vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display:flex;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1em;
+    height: 90vh;
     color: var(--primary-color);
    }
   
+   .header-sect{
+    display:flex;
+   }
+   
    .section-4 h1 {
     justify-content: center;
     font-size: 36px;
@@ -761,10 +755,62 @@ footer {
   .left-col-s6 .btn {
     display: flex;
     background-color: var(--accent-color);
-    color: var(--body-color);
+    color: var(--primary-color);
+  }
+
+  .left-col-s6 .btn:hover {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
   }
   /* <!-- Testimonial Section --> */
- 
+  .section-7 {
+    display: flex;
+    padding: 3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left-col-s7 {
+  display: flex;
+  width: 221%;
+  margin-left: 5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .right-col-s7 {
+    margin-right: 5em;
+    background: var(--secondary-color);
+    color:var(--primary-color);
+    padding-top: 3em;
+    padding-bottom: 7.3em;
+  }
+  
+  .right-col-s7 h1 {
+    padding-bottom: .5em;
+    padding-right: 1em;
+    padding-left: .5em;
+  }
+  
+  .right-col-s7 p {
+    padding-left: 1.5em;
+    padding-right: 2em;
+    padding-right: 1.5em;
+  }
+  
+  .right-col-s7 .btn {
+    display: flex;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+
+  .right-col-s7 .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
   /* ------- Footer Section -------> */
   .footer-top {
     display: flex;
