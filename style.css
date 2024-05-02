@@ -135,13 +135,12 @@ nav a:hover {
 
 /* ------- Hero Section -------> */
 .hero {
-  background-image: url(Images/warriors_and_quiet_waters.jpg);
+  background-image: url(./Images/warriors_and_quiet_waters.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   padding-top: 17em;
   padding-left: 1.5em;
@@ -149,7 +148,7 @@ nav a:hover {
 }
 
 .hero-title {
-  background: url(Images/hero-title-background.png);
+  background: url(./Images/hero-title-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2em;
@@ -203,7 +202,7 @@ nav a:hover {
 /* <!-- Common Signs Section --> */
 .section-2 {
   display: block;
-  background-image: url(Images/Background.jpg);
+  background-image: url(./Images/Background.jpg);
   height: 95vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +250,7 @@ nav a:hover {
 
 /* <!-- Recognize the signs section --> */
  .section-4 {
-  background-image: url(Images/Background.jpg);
+  background-image: url(./Images/Background.jpg);
   height: 210vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,7 +330,7 @@ nav a:hover {
 
 /* <!-- How will W&QW programs help me Section --> */
 .section-6 {
-  background-image: url(images/Background.jpg);
+  background-image: url(./Images/Background.jpg);
   display: block;
   gap: 1em;
   margin-top: 1em;
@@ -498,8 +497,11 @@ footer {
   }
 
   .hero {
-    height: 100vh;
+    height: 90vh;
     padding: 1em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
   
   .nav-toggle-label {
@@ -552,13 +554,11 @@ footer {
   } 
 
   /* ------- Hero Section -------> */
-  .hero {
-    height: 90vh;
-  }
+  
 
   .hero-title {
     width: 600px;
-    background: url(Images/hero-title-background.png);
+    background: url(./Images/hero-title-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2em;
@@ -599,7 +599,7 @@ footer {
   
   /* <!-- Common Signs Section --> */
   .section-2 {
-    background-image: url(Images/Background.jpg);
+    background-image: url(./Images/Background.jpg);
     height: 75vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -725,7 +725,7 @@ footer {
  
   /* <!-- How will W&QW programs help me Section --> */
   .section-6 {
-    background-image: url(images/Background.jpg);
+    background-image: url(./Images/Background.jpg);
     display: flex;
     gap: 1em;
     margin-top: 100px;
